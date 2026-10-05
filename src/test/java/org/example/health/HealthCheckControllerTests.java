@@ -15,10 +15,10 @@ class HealthCheckControllerTests {
 
     @Test
     void health() {
-        assertThat(mvc.get().uri("/health"))
+        assertThat(mvc.get().uri("/api/health"))
                 .hasStatusOk()
                 .bodyJson()
-                .extractingPath("$.status").isEqualTo("UP");
+                .extractingPath("$.status").isEqualTo("OK");
     }
 
 }
