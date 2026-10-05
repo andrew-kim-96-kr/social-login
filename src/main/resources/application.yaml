@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: social-login
+  docker:
+    compose:
+      skip:
+        in-tests: false
+  jpa:
+    hibernate:
+      ddl-auto: update
